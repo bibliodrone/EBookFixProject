@@ -1,0 +1,114 @@
+1 007##                    DELETE-FIELD
+1 009##                    DELETE-FIELD
+1 03599                    DELETE-FIELD
+1 03588                    DELETE-FIELD
+1 035X#                    DELETE-FIELD
+1 05914                    DELETE-FIELD
+1 0692                     DELETE-FIELD
+1 012##                    DELETE-FIELD
+1 099##                    DELETE-FIELD
+1 506##                    DELETE-FIELD
+1 533##                    DELETE-FIELD
+1 540##                    DELETE-FIELD
+1 541##                    DELETE-FIELD
+1 561##                    DELETE-FIELD
+1 562##                    DELETE-FIELD
+1 583##                    DELETE-FIELD
+1 59099                    DELETE-FIELD
+1 845##                    DELETE-FIELD
+1 856##                    DELETE-FIELD
+1 H09##                    DELETE-FIELD
+1 H20##                    DELETE-FIELD
+1 H21##                    DELETE-FIELD
+1 245##                    DELETE-FIELD-COND              Y,$$5law
+1 TIR##                    CHANGE-FIELD                   245
+1 SRC##                    DELETE-FIELD
+1 PRF##                    DELETE-FIELD
+1 CAT##                    DELETE-FIELD-COND              Y,$$aEBRARbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aMomebatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aMOMLbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aEEBObatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aACLSbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aNLIBbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aASPWLbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aASPBDbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aASPFSbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aASPAAbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aASPWDbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aASPWPbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aASPSMbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aASPCWbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aASPBTbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aASPIWbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aASPEEbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aEAIFSbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aLIONTbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aLIONRbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aLIONPbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aARTFLbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aLLMCbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aBROWWbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aCASEIObatm
+1 CAT##                    DELETE-FIELD-COND              Y,$$aWESTLbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aLEXISbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aNCNPbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aPASTMbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aSAFARbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aSUPERbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aUUAPMbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aEAISSbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aASPLLbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aASPbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aOXSCHbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aSPRGPbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aRUMSEbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aATLAMbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aATLAMbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aNACAPbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aCAMHIbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aASPIMbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aECCObatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aAPABIbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aLIONAbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aHEINObatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aSPRGRbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aSLAVEbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aALEXSbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$a######batmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$a#####batmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$a####batmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$a###batmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aebk-batmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$abatmp
+1 STA1                     DELETE-FIELD-COND              Y,$$aEBOOK
+2 830 0                    DELETE-FIELD-COND              Y,$$9DELETE
+2 83090                    CHANGE-FIRST-IND               9,
+2 5009#                    CHANGE-FIRST-IND               9,
+2 240##                    REPLACE-STRING                 $$hMicroform,
+2 700##                    REPLACE-STRING                 $$h[microform],
+2 245##                    REPLACE-STRING                 .$$h[microform],
+2 245##                    REPLACE-STRING                 ;$$h[microform],
+2 245##                    REPLACE-STRING                 $$h[microform],
+2 245##                    REPLACE-STRING                 $$hmicroform,
+2 245##                    REPLACE-STRING                 $$hMicroform,
+2 246##                    REPLACE-STRING                 $$h[microform],
+2 246##                    REPLACE-STRING                 $$hmicroform,
+2 740##                    REPLACE-STRING                 $$h[microform],
+2 740##                    REPLACE-STRING                 $$hmicroform
+2 008##      023 023       FIXED-CHANGE-VAL               a,|
+2 008##      023 023       FIXED-CHANGE-VAL               b,|
+2 008##      023 023       FIXED-CHANGE-VAL               c,|
+2 337##                    CHANGE-FIRST-IND               #,
+2 338##                    CHANGE-FIRST-IND               #,
+3 245T#                    DELETE-FIELD
+3 T24##                    CHANGE-FIELD                   245
+3 01099                    DELETE-FIELD
+3 02099                    DELETE-FIELD
+3 02098                    DELETE-FIELD
+3 02299                    DELETE-FIELD
+3 9919                     DELETE-FIELD
+3 905                      DELETE-FIELD
+4 008##                    CHANGE-FIRST-IND-MATCH         #,9,BK
+4 0089#      011 014       FIXED-CHANGE-VAL-RANGE         #,^ 
+4 0089#                    REPLACE-STRING                 BK,
+4 0089#                    CHANGE-FIRST-IND               9, 

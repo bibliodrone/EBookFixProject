@@ -1,0 +1,12 @@
+1 LDR        017 017       FIXED-CHANGE-VAL               #,2
+2 001##                    COPY-SYSTEM-NUMBER             03599,L,a,(Caseio)
+2 001##                    COPY-SYSTEM-NUMBER             035  ,L,a,(ItFiC)
+2 001##                    REPLACE-STRING                 ^,
+2 003##                    DELETE-FIELD
+2 005##                    DELETE-FIELD
+2 040##                    ADD-SUBFIELD                   d,MH
+2 245##                    REPLACE-STRING                 $$h[electronic resource],
+2 900##                    DELETE-FIELD
+2 910##                    DELETE-FIELD
+7 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+9                          SORT-FIELDS

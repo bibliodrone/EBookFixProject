@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<availability>
+<permalink>http://id.lib.harvard.edu/aleph/000600248/catalog</permalink>
+<branch>
+<repository>
+<id>KIR</id>
+<name>Kirkland House</name>
+<url> http://library.harvard.edu/ KIR</url>
+</repository>
+<collection>
+<collectionname> General Collection 	</collectionname>
+<holding>
+<callnumber>PS3551.S5 F594 1986 </callnumber>
+</holding>
+</collection>
+</branch>
+<branch>
+<repository>
+<id>LAM</id>
+<name>Lamont</name>
+<url> http://library.harvard.edu/ LAM</url>
+</repository>
+<collection>
+<collectionname>FARNSWORTH</collectionname>
+<holding>
+<callnumber>PS3551.S5 F594 1986 </callnumber>
+<items>
+<itemrecord>
+<stat>Not checked out | 28-day loan</stat>
+<barcode>32044037862000</barcode>
+<lastreturndate>20151016</lastreturndate>
+<desc/>
+<statuscode>28</statuscode>
+<processStatus/>
+</itemrecord>
+</items>
+</holding>
+</collection>
+</branch>
+<branch>
+<repository>
+<id>TOZ</id>
+<name>Tozzer</name>
+<url> http://library.harvard.edu/ TOZ</url>
+</repository>
+<collection>
+<collectionname> General Collection 	</collectionname>
+<holding>
+<callnumber>FANT.ARC. As 42 f </callnumber>
+<items>
+<itemrecord>
+<stat>Not checked out | Regular loan</stat>
+<barcode>32044042233700</barcode>
+<lastreturndate>20120727</lastreturndate>
+<desc/>
+<statuscode>01</statuscode>
+<processStatus/>
+</itemrecord>
+</items>
+</holding>
+</collection>
+</branch>
+</availability>
+ 
+<availability>
+<permalink>http://id.lib.harvard.edu/aleph/000703444/catalog</permalink>
+<branch>
+<repository>
+<id>LAM</id>
+<name>Lamont</name>
+<url> http://library.harvard.edu/ LAM</url>
+</repository>
+<collection>
+<collectionname>FARNSWORTH</collectionname>
+<holding>
+<callnumber>PS648.S3 S58 x </callnumber>
+</holding>
+</collection>
+</branch>
+<branch>
+<repository>
+<id>WID</id>
+<name>Widener</name>
+<url> http://library.harvard.edu/ WID</url>
+</repository>
+<collection>
+<collectionname>Harvard Depository</collectionname>
+<holding>
+<callnumber>PS648.S3 W64 x [Consult Circ. desk for HW9968.] </callnumber>
+<items>
+<itemrecord>
+<stat>Not checked out | Regular loan (depository)</stat>
+<barcode>HW9968</barcode>
+<lastreturndate>20111208</lastreturndate>
+<desc/>
+<statuscode>01</statuscode>
+<processStatus>Harvard Depository status</processStatus>
+</itemrecord>
+</items>
+</holding>
+</collection>
+</branch>
+</availability>
+ 
+<availability>
+<permalink>http://id.lib.harvard.edu/aleph/000704119/catalog</permalink>
+<branch>
+<repository>
+<id>WID</id>
+<name>Widener</name>
+<url> http://library.harvard.edu/ WID</url>
+</repository>
+<collection>
+<collectionname>Harvard Depository</collectionname>
+<holding>
+<callnumber>PZB 2815.156 </callnumber>
+<items>
+<itemrecord>
+<stat>Not checked out | Regular loan (depository)</stat>
+<barcode>HN5TE5</barcode>
+<lastreturndate>20160212</lastreturndate>
+<desc/>
+<statuscode>01</statuscode>
+<processStatus>Harvard Depository status</processStatus>
+</itemrecord>
+</items>
+</holding>
+</collection>
+</branch>
+</availability>
+ 
+<availability>
+<permalink>http://id.lib.harvard.edu/aleph/000718600/catalog</permalink>
+<branch>
+<repository>
+<id>GUT</id>
+<name>Gutman Education</name>
+<url> http://library.harvard.edu/ GUT</url>
+</repository>
+<collection>
+<collectionname> General Collection 	</collectionname>
+<holding>
+<callnumber>PZ3.A8316 Fqa </callnumber>
+<items>
+<itemrecord>
+<stat>Not checked out | Regular loan</stat>
+<barcode>32044028292837</barcode>
+<lastreturndate>20160201</lastreturndate>
+<desc/>
+<statuscode>01</statuscode>
+<processStatus/>
+</itemrecord>
+</items>
+</holding>
+</collection>
+</branch>
+<branch>
+<repository>
+<id>LAM</id>
+<name>Lamont</name>
+<url> http://library.harvard.edu/ LAM</url>
+</repository>
+<collection>
+<collectionname>FARNSWORTH</collectionname>
+<holding>
+<callnumber>PS3551.S5 F63x </callnumber>
+<items>
+<itemrecord>
+<stat>Not checked out | 28-day loan</stat>
+<barcode>32044072293327</barcode>
+<lastreturndate>20160510</lastreturndate>
+<desc/>
+<statuscode>28</statuscode>
+<processStatus/>
+</itemrecord>
+</items>
+</holding>
+</collection>
+</branch>
+</availability>
+ 
+<availability>
+<permalink>http://id.lib.harvard.edu/aleph/000725400/catalog</permalink>
+</availability>

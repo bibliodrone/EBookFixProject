@@ -1,0 +1,67 @@
+1 LDR        022 022       FIXED-CHANGE-VAL               ’,0
+2 035                      DELETE-FIELD-COND              Y,(OCoLC)
+2 001##                    COPY-SYSTEM-NUMBER             03599,L,a,(Llmc)
+2 001##                    COPY-SYSTEM-NUMBER             0350 ,L,a,
+2 007##                    FIXED-FIELD-EXTEND             001,014,|
+2 007##      005 005       FIXED-CHANGE-VAL               -,^
+2 035##                    REPLACE-STRING                 ^,
+2 003##                    DELETE-FIELD
+2 005##                    DELETE-FIELD
+2 019##                    DELETE-FIELD
+2 029##                    DELETE-FIELD
+2 049##                    DELETE-FIELD
+2 040##                    ADD-SUBFIELD                   d,MH
+2 092##                    DELETE-FIELD
+2 506##                    DELETE-FIELD
+2 533##                    DELETE-SUBFIELD                n
+2 830##                    DELETE-FIELD-COND              Y,LLMC-digital (Series)
+2 LDR                      ADD-FIELD                      830 0,L,$$aLLMC Digital$$5net
+2 9####                    DELETE-FIELD
+7 LDR                      ADD-FIELD                      02299,L,$$a
+7 02299                    CONCATENATE-FIELDS             776##,x
+7 02299                    REPLACE-STRING                 $$x,
+7 LDR                      ADD-FIELD                      02099,L,$$a
+7 02099                    CONCATENATE-FIELDS             776##,z
+7 02099                    REPLACE-STRING                 $$z,
+7 LDR                      ADD-FIELD                      01099,L,$$a
+7 01099                    CONCATENATE-FIELDS             776##,w
+7 01099                    REPLACE-STRING                 $$a$$w(DLC),$$a
+7 01099                    DELETE-SUBFIELD                w
+7 01099                    DELETE-SUBFIELD                x
+7 LDR                      ADD-FIELD                      035XX,L,$$a
+7 035XX                    CONCATENATE-FIELDS             776##,w
+7 035XX                    REPLACE-STRING                 $$w(OCoLC),$$9
+7 035XX                    DELETE-SUBFIELD                a
+7 035XX                    DELETE-SUBFIELD                w
+7 035XX                    DELETE-SUBFIELD                x
+7 035XX                    REPLACE-STRING                 $$9,$$aocm
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,7,$$aocm#
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,6,$$aocm##
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,5,$$aocm###
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,4,$$aocm####
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,3,$$aocm#####
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,2,$$aocm######
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,1,$$aocm#######
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,0,$$aocm########
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,N,$$aocm#########
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,C,$$aocm##########
+8 035X7                    REPLACE-STRING                 $$aocm,$$aocm0000000
+8 035X6                    REPLACE-STRING                 $$aocm,$$aocm000000
+8 035X5                    REPLACE-STRING                 $$aocm,$$aocm00000
+8 035X4                    REPLACE-STRING                 $$aocm,$$aocm0000
+8 035X3                    REPLACE-STRING                 $$aocm,$$aocm000
+8 035X2                    REPLACE-STRING                 $$aocm,$$aocm00
+8 035X1                    REPLACE-STRING                 $$aocm,$$aocm0
+8 035XN                    REPLACE-STRING                 $$aocm,$$aocn
+8 035XC                    REPLACE-STRING                 $$aocm,$$aoc
+9 856##                    CHANGE-FIRST-IND               #,4
+9 856##                    CHANGE-SECOND-IND              #,1
+9 856##                    REPLACE-STRING                 name.umdl.umich.edu/,hdl.handle.net/2027/lmc.
+9 856##                    CHANGE-FIRST-IND-MATCH         #,9,hdl.handle.net/2027/lmc
+9 856##                    CHANGE-FIRST-IND-MATCH         #,9,www.llmcdigital.org
+9 8564#                    DELETE-FIELD
+9 856##                    CHANGE-FIRST-IND               #,4
+
+9 LDR                      ADD-FIELD                      538  ,L,$$aMode of access: World Wide Web.
+9 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+9                          SORT-FIELDS

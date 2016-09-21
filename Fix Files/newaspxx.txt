@@ -1,0 +1,70 @@
+1 LDR        017 017       FIXED-CHANGE-VAL               #,5
+2 003                      DELETE-FIELD                 
+2 035                      CHANGE-FIRST-IND-MATCH         #,0,(OCoLC)
+2 0350                     REPLACE-STRING                 (OCoLC),ocm
+2 035                      DELETE-FIELD
+2 001##                    REPLACE-STRING                 /,
+2 001                      COPY-SYSTEM-NUMBER             03599,L,a,(Alexs)
+3 005                      DELETE-FIELD
+3 006                      DELETE-FIELD
+3 049##                    DELETE-FIELD
+4 506##                    DELETE-FIELD
+4 590##                    DELETE-FIELD
+4 655##                    DELETE-FIELD-COND              Y,Electronic books
+4 856##                    DELETE-SUBFIELD                w
+4 856##                    DELETE-SUBFIELD                z
+6 533##                    DELETE-SUBFIELD                n
+6 776##                    COPY-FIELD                     TMP  ,
+6 TMP                      DELETE-SUBFIELD                a
+6 TMP                      CHANGE-SECOND-IND-MATCH        #,9,$$z
+6 TMP                      CHANGE-SECOND-IND-MATCH        #,8,(DLC)
+6 TMP 9                    CHANGE-SUBFIELD                z,a
+6 TMP 9                    COPY-FIELD                     02099,
+6 TMP 8                    REPLACE-STRING                 $$w(DLC),$$a
+6 TMP 8                    COPY-FIELD                     01099,
+6 TMP##                    DELETE-FIELD
+6 020                      DELETE-SUBFIELD                w
+6 020                      CHANGE-SUBFIELD                z,a
+6 010                      DELETE-SUBFIELD                z
+6 010                      CHANGE-SUBFIELD                w,a
+6 010                      REPLACE-STRING                 (DLC),
+6 830##                    CHANGE-FIRST-IND-MATCH         #,5,Black drama# 2nd edition
+6 830##                    CHANGE-FIRST-IND-MATCH         #,5,Black drama# 2nd ed
+6 8305#                    REPLACE-STRING                 2nd edition,second ed
+6 8305#                    REPLACE-STRING                 2nd ed,second ed
+6 8305#                    CHANGE-FIRST-IND               #,
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Black women writers
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Black drama
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,North American immigrant letters
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,North American Indian thought and culture
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Irish women poets of the romantic period
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Caribbean literature
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Underground and independent comics
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,The Sixties
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Contemporary world music
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,African American music reference
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,American song
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,American history in video
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Audio drama: the L.A. Theatre Works collection
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Dance in video
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Ethnographic video online
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,The gilded age
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Gilded age
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Women and social movements
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Scottish women poets
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Theatre in video
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,World history in video
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Twentieth century North American drama
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,North American Indian drama
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Smithsonian global sound for libraries
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Classical music library
+6 830##                    CHANGE-FIRST-IND-MATCH         #,9,Images of America
+6 8309#                    ADD-SUBFIELD                   5,net
+6 8309#                    CHANGE-SECOND-IND              #,0
+6 83090                    REPLACE-STRING                 .$$5net,$$5net
+6 8309#                    CHANGE-FIRST-IND               9,
+6 #####                    REPLACE-STRING                 [from old catalog],
+6 9####                    DELETE-FIELD
+7 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+8                          SORT-FIELDS
+8 TMP                      DELETE-FIELD

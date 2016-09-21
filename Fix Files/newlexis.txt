@@ -1,0 +1,12 @@
+1 LDR        017 017       FIXED-CHANGE-VAL               #,2
+2 001##                    COPY-SYSTEM-NUMBER             03599,L,a,(Lexis)
+2 001##                    COPY-SYSTEM-NUMBER             035  ,L,a,(CASSD)
+2 LDR                      ADD-FIELD                      040  ,L,$$aCASSD$$cCASSD
+2 040                NOT-L DELETE-FIELD
+2 099##                    DELETE-FIELD
+2 506##                    DELETE-FIELD
+2 655##                    DELETE-FIELD-COND              Y,Electronic books
+2 655##                    DELETE-FIELD-COND              Y,Electronic journals
+2 9####                    DELETE-FIELD
+7 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+9                          SORT-FIELDS

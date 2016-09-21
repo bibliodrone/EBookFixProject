@@ -1,0 +1,195 @@
+!
+! NOTE - 1) do not edit this header section
+!      - 2) this header is created from the template located
+!        in $alephe_headers/tab/import
+!      - 3) to add remarks within the table,
+!        start the line with !rem or !*
+!      - 4) to mark a line as non-used (but restorable)
+!        add ! at start of line, retaining column structure
+!        displaced by one position to the right
+!      - 5) all internal codes must be Latin characters A-Z,0-9
+!
+!===========================================================================
+!                         generic_fix 
+! This is a sample table of a processing script for fix_doc_do_file_08
+! and p_file_08.
+!===========================================================================
+!
+! Last header change: 25/02/2002
+!
+! HELP
+! END_HELP
+!
+! TABLE_KEY 1
+!
+! COL   1.   1; NUM; ;
+!               Iteration;
+!               The operations are performed in order of Iteration. 
+!               Operations in iteration 1 are processed before those
+!               in iteration 2. Within iteration 1, the operations are
+!               processed in the order listed in the script;
+! COL   2.   5; ALPHA_NUM, UPPER; #;
+!               Field tag;
+!               Document record field code. # can be used to indicate
+!               truncation (e.g., 245## for 2451, 2452, 24501); 
+! COL   3.   2; ALPHA; ;
+!               Format code;
+!               Record's format code (FMT field). # can be used as a 
+!               wildcard;
+! COL   4.   1; ALPHA_NUM; ;
+!               First position filter;
+!               First position filter. If the position filter is not blank,
+!               then the operation is performed only if the first position 
+!               in the field matches;
+! COL   5.   3; NUM; ;
+!               Position range start;
+!               Position range start. Used for operations on fixed fields
+!               to specify the position range. Note that field positions
+!               are counted started from zero;
+! COL   6.   3; ALPHA_NUM; ;
+!               Position range end;
+!               Position range end. Used for operations on fixed fields
+!               to specify the position range. Note that field positions
+!               are counted started from zero;
+! COL   7.   5; TEXT; ;
+!               Occurrence filter;
+!               Occurrence filter. Contains a five-digit number, or 
+!               FIRST, LAST, NOT-F (not first), or NOT-L (not last). 
+! COL   8.  30; TEXT;;
+!               Operation code; ;
+!               Operation code. Following are the valid operation codes,
+!               a full description can be found in the How to Set Up a Script 
+!               for the Correction of Records How To document. :
+!               ADD-FIELD
+!               CHANGE-FIELD
+!               CHANGE-FIRST-IND
+!               CHANGE-SECOND-IND
+!               CHANGE-SUBFIELD
+!               COND-LOAD-VAL-POS
+!               COPY-FIELD
+!               COPY-SYSTEM-NUMBER
+!               DELETE-FIELD
+!               DELETE-FIELD-COND
+!               DELETE-FIXED-COND
+!               DELETE-SUBFIELD
+!               DELETE-SUBFIELD-DELIMITER
+!               EDIT-SUBFIELD-HYPHEN
+!               FIXED-CHANGE-VAL
+!               FIXED-CHANGE-VAL-RANGE
+!               FIXED-FIELD-EXTEND
+!               FIXED-RANGE-OP
+!               REPLACE-STRING
+!               SORT-FIELDS;
+! COL   9. 100; TEXT; ;
+!               Operation parameters;
+!               Operation parameters;
+!
+!   2   3  4  5   6    7                 8                           9
+!-!!!!!-!!-!-!!!-!!!-!!!!!-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+!rem Change encoding level if necessary to an appropriate value
+!1 LDR        017 017       FIXED-CHANGE-VAL               #,2
+!
+!rem Older OCLC records have non-ASCII char in this position; change to 0
+1 LDR        022 022       FIXED-CHANGE-VAL               ’,0
+!
+!rem format OCLC #s if appropriate, see also oclc_pad.fix
+2 035                      CHANGE-FIRST-IND-MATCH         #,0,(OCoLC)
+2 0350                     REPLACE-STRING                 ^
+2 0350                     REPLACE-STRING                 (OCoLC),ocm
+2 0350                     DELETE-SUBFIELD                z
+!
+!rem delete unnecessary 035 tags; if there are valid OCLC #s w/blank inds, need to change those first
+!2 035                      DELETE-FIELD
+!
+!rem 03599 field with collection code is used in holdings creation; rm slash from 001 (breaks naming), remove -
+2 001##                    REPLACE-STRING                 /,
+2 001##                    COPY-SYSTEM-NUMBER             03599,L,a,(Staff)
+2 001##                    REPLACE-STRING                 -,
+!
+!rem Copy vendor system number to 035 w/MARC-like prefix, if there are no other unique identifiers
+!rem  to be used for matching if updates are sent
+!2 001##                    COPY-SYSTEM-NUMBER             035  ,L,a,(Prefix)
+!
+!rem  Add 040 if one is not present, with appropriate value
+!2 LDR                      ADD-FIELD                      040  ,L,$$aSpringer
+!
+2 003##                    DELETE-FIELD
+2 005##                    DELETE-FIELD
+2 019##                    DELETE-FIELD
+2 029##                    DELETE-FIELD
+2 049##                    DELETE-FIELD
+2 092##                    DELETE-FIELD
+2 256##                    DELETE-FIELD
+2 516##                    DELETE-FIELD
+!
+!rem Often the vendor 007 is malconstructed. If necessary, delete theirs and add generic one
+!2 007                      DELETE-FIELD
+!2 LDR                      ADD-FIELD                      007  ,L,cr^|n|||||||||
+!
+!rem Restrictions on access notes, 506, are added via holdings fixes
+2 506##                    DELETE-FIELD
+!rem 533 is transferred to hol as 843. Hol fix supplies n. 
+2 533##                    DELETE-SUBFIELD                n
+!
+!rem This genre no longer used
+2 655##                    DELETE-FIELD-COND              Y,Electronic books
+!
+!rem Modify, delete, add series stmt as appropriate
+!2 830##                    DELETE-FIELD-COND              Y,LLMC-digital (Series)
+!2 LDR                      ADD-FIELD                      830 0,L,$$aLLMC Digital$$5net
+!
+!rem other
+!2 909##                    CHANGE-FIELD                   H09
+2 9####                    DELETE-FIELD
+!2 856##                    DELETE-SUBFIELD                z
+!
+!rem If print ed. identifirers are available in 776, copy them to 020/99 etc. for matching purposes
+7 LDR                      ADD-FIELD                      02299,L,$$a
+7 02299                    CONCATENATE-FIELDS             776##,x
+7 02299                    REPLACE-STRING                 $$x,
+7 LDR                      ADD-FIELD                      02099,L,$$a
+7 02099                    CONCATENATE-FIELDS             776##,z
+7 02099                    REPLACE-STRING                 $$z,
+7 LDR                      ADD-FIELD                      01099,L,$$a
+7 01099                    CONCATENATE-FIELDS             776##,w
+7 01099                    REPLACE-STRING                 $$a$$w(DLC),$$a
+7 01099                    DELETE-SUBFIELD                w
+7 01099                    DELETE-SUBFIELD                x
+7 LDR                      ADD-FIELD                      035XX,L,$$a
+7 035XX                    CONCATENATE-FIELDS             776##,w
+7 035XX                    REPLACE-STRING                 $$w(OCoLC),$$9
+7 035XX                    DELETE-SUBFIELD                a
+7 035XX                    DELETE-SUBFIELD                w
+7 035XX                    DELETE-SUBFIELD                x
+7 035XX                    REPLACE-STRING                 $$9,$$aocm
+!rem padding oclc numbers (from allison's marcit oclc.xpo.fix with slight mod) (for # from 776 only)
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,7,$$aocm#
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,6,$$aocm##
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,5,$$aocm###
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,4,$$aocm####
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,3,$$aocm#####
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,2,$$aocm######
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,1,$$aocm#######
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,0,$$aocm########
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,N,$$aocm#########
+7 035##                    CHANGE-SECOND-IND-MATCH        #,C,$$aocm##########
+!rem continue padding
+8 035X7                    REPLACE-STRING                 $$aocm,$$aocm0000000
+8 035X6                    REPLACE-STRING                 $$aocm,$$aocm000000
+8 035X5                    REPLACE-STRING                 $$aocm,$$aocm00000
+8 035X4                    REPLACE-STRING                 $$aocm,$$aocm0000
+8 035X3                    REPLACE-STRING                 $$aocm,$$aocm000
+8 035X2                    REPLACE-STRING                 $$aocm,$$aocm00
+8 035X1                    REPLACE-STRING                 $$aocm,$$aocm0
+8 035XN                    REPLACE-STRING                 $$aocm,$$aocn
+8 035#C                    REPLACE-STRING                 $$aocm,$$aoc
+!
+!
+!rem Add if not present AND record is born digital
+9 LDR                      ADD-FIELD                      538  ,L,$$aMode of access: World Wide Web.
+!
+!rem Add STA for un-matching suppressed HVD01 records
+9 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+9                          SORT-FIELDS
+!

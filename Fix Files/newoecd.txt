@@ -1,0 +1,21 @@
+1 LDR        017 017       FIXED-CHANGE-VAL               #,5
+2 001                      COPY-SYSTEM-NUMBER             03599,L,a,(OECD)
+2 001                      REPLACE-STRING                 -,
+2 002##                    DELETE-FIELD
+2 003##                    DELETE-FIELD
+2 005##                    DELETE-FIELD
+2 006##                    DELETE-FIELD
+2 020                      COPY-FIELD                     02098
+2 02098                    REPLACE-STRING                 $$a978,$$a
+2 110##                    CHANGE-SECOND-IND-MATCH        #,9,Organisation de coop
+2 110#9                    DELETE-SUBFIELD                a
+2 110#9                    ADD-SUBFIELD                   a,Organisation for Economic Co-operation and Development.
+2 110##                    CHANGE-SECOND-IND              #,
+2 710##                    CHANGE-SECOND-IND-MATCH        #,9,Organisation de coop
+2 710#9                    DELETE-SUBFIELD                a
+2 710#9                    ADD-SUBFIELD                   a,Organisation for Economic Co-operation and Development.
+2 710##                    CHANGE-SECOND-IND              #,
+2 856##                    DELETE-SUBFIELD                a
+2 9####                    DELETE-FIELD
+7 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+9                          SORT-FIELDS

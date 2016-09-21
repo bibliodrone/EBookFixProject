@@ -1,0 +1,12 @@
+1 LDR        022 022       FIXED-CHANGE-VAL               ’,0
+2 001##                    COPY-SYSTEM-NUMBER             03599,L,a,(TBRC)
+2 001##                    COPY-SYSTEM-NUMBER             035  ,L,a,(TBRC)
+2 533##                    DELETE-SUBFIELD                n
+2 655##                    DELETE-FIELD-COND              Y,Electronic books
+2 LDR                      ADD-FIELD                      007  ,L,cr^|n|||||||||
+2 9####                    DELETE-FIELD
+2 506##                    CHANGE-FIRST-IND-MATCH         #,0,Open Access
+2 506##                    CHANGE-FIRST-IND-MATCH         #,0,Fair Use
+2 506##                    CHANGE-FIRST-IND-MATCH         #,1,Restricted
+9 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+9                          SORT-FIELDS

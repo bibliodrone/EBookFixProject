@@ -1,0 +1,48 @@
+1 LDR        022 022       FIXED-CHANGE-VAL               ’,0
+2 001##                    COPY-SYSTEM-NUMBER             03599,L,a,(Artfl)
+2 001##                    COPY-SYSTEM-NUMBER             0350 ,L,a,
+2 035##                    REPLACE-STRING                 ^,
+2 001##                    DELETE-FIELD
+2 003##                    DELETE-FIELD
+2 005##                    DELETE-FIELD
+2 007                      FIXED-FIELD-EXTEND             001,014,|
+2 008        006 010       FIXED-CHANGE-VAL               r####,s1996
+2 008        006 010       FIXED-CHANGE-VAL               s1945,s1984
+2 008        011 014       FIXED-CHANGE-VAL               ####,^^^^
+2 008        023 023       FIXED-CHANGE-VAL               ^,s
+2 019##                    DELETE-FIELD
+2 029##                    DELETE-FIELD
+2 040##                    ADD-SUBFIELD                   d,MH
+2 049##                    DELETE-FIELD
+2 092##                    DELETE-FIELD
+2 260##                    REPLACE-STRING                 .,]
+2 260##                    REPLACE-STRING                 $$c[,$$c
+2 300##                    REPLACE-STRING                 $$b, 
+2 300##                    CHANGE-FIELD                   256
+2 256##                    DELETE-FIELD-COND              Y,Electronic data
+2 256##                    DELETE-FIELD-COND              Y,Computer data
+2 440##                    DELETE-FIELD
+2 500##                    DELETE-FIELD-COND              Y,Contact:  American and French
+2 500##                    DELETE-FIELD-COND              Y,Contact: American and French
+2 506##                    DELETE-FIELD
+2 516##                    DELETE-FIELD-COND              Y,Electronic text
+2 540##                    ADD-SUBFIELD                   5,net
+2 540##                    REPLACE-STRING                 Institãut,Institut
+2 540##                    CHANGE-FIELD                   845
+2 567##                    DELETE-FIELD
+2 538##                    CHANGE-FIRST-IND-MATCH         #,9,magnetic
+2 538##                    CHANGE-FIRST-IND-MATCH         #,9,Magnetic
+2 5389#                    ADD-FIELD                      538  ,L,$$aMode of access: World Wide Web.
+2 5389#                    DELETE-FIELD
+2 653##                    DELETE-FIELD-COND              Y,Electronic
+2 710##                    DELETE-FIELD-COND              Y,American and French Research on the
+2 LDR##                    ADD-FIELD                      7102 ,L,$$aAmerican and French Research on the Treasury of the French Language (Project)
+2 856##                    DELETE-SUBFIELD                2
+2 856##                    DELETE-SUBFIELD                z
+2 856##                    CHANGE-FIRST-IND               #,4
+2 856##                    CHANGE-SECOND-IND              #,0
+2 994##                    DELETE-FIELD
+3 LDR##                    ADD-FIELD                      85640,L,$$uhttp://nrs.harvard.edu/urn-3:hul.eresource:artflxxx
+3 999##                    DELETE-FIELD
+7 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+9                          SORT-FIELDS

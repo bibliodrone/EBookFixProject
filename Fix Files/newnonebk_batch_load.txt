@@ -1,0 +1,28 @@
+1 007##                    DELETE-FIELD
+1 009##                    DELETE-FIELD
+1 03599                    DELETE-FIELD
+1 03588                    DELETE-FIELD
+1 035X#                    DELETE-FIELD
+1 05914                    DELETE-FIELD
+1 0692                     DELETE-FIELD
+1 012##                    DELETE-FIELD
+1 506##                    DELETE-FIELD
+1 533##                    DELETE-FIELD
+1 540##                    DELETE-FIELD
+1 541##                    DELETE-FIELD
+1 561##                    DELETE-FIELD
+1 562##                    DELETE-FIELD
+1 583##                    DELETE-FIELD
+1 590                      DELETE-FIELD
+1 59099                    DELETE-FIELD
+1 845##                    DELETE-FIELD
+1 843##                    DELETE-FIELD
+1 852##                    DELETE-FIELD
+1 856##                    DELETE-FIELD
+1 866##                    DELETE-FIELD
+1 245##                    DELETE-FIELD-COND              Y,$$5law
+1 TIR##                    CHANGE-FIELD                   245
+1 SRC##                    DELETE-FIELD
+1 CAT##                    DELETE-FIELD-COND              Y,$$aAMRELbatmp
+1 CAT##                    DELETE-FIELD-COND              Y,$$aUUAPMbatmp
+1 STA1                     DELETE-FIELD-COND              Y,$$aEBOOK

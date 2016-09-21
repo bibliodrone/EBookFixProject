@@ -1,0 +1,28 @@
+1 LDR        017 017       FIXED-CHANGE-VAL               #,2
+1 LDR        018 018       FIXED-CHANGE-VAL               #,a
+2 035                      DELETE-FIELD
+2 001                      COPY-SYSTEM-NUMBER             03599,L,a,(Oxsch)
+2 002##                    DELETE-FIELD
+2 003##                    DELETE-FIELD
+2 005##                    DELETE-FIELD
+2 006##                    DELETE-FIELD
+2 008        023 023       FIXED-CHANGE-VAL               s,^
+2 019##                    DELETE-FIELD
+2 037##                    DELETE-FIELD
+2 049##                    DELETE-FIELD
+2 092##                    DELETE-FIELD
+2 096##                    DELETE-FIELD
+2 097##                    DELETE-FIELD
+2 256##                    DELETE-FIELD
+2 533##                    DELETE-SUBFIELD                n
+2 776##                    CHANGE-FIRST-IND-MATCH         #,9,Print version
+2 7769#                    DELETE-SUBFIELD                i
+2 7769#                    CHANGE-SUBFIELD                z,a
+2 7769#                    CHANGE-SECOND-IND              #,
+2 7769#                    CHANGE-FIELD                   020
+2 0209#                    CHANGE-FIRST-IND               #,
+2 856##                    DELETE-SUBFIELD                z
+2 856##                    DELETE-SUBFIELD                3
+2 9####                    DELETE-FIELD
+3 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+3                          SORT-FIELDS

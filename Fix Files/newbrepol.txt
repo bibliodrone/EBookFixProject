@@ -1,0 +1,22 @@
+1 LDR        005 005       FIXED-CHANGE-VAL               #,n
+1 LDR        017 017       FIXED-CHANGE-VAL               3,5
+1 LDR        018 018       FIXED-CHANGE-VAL               u,a
+2 035##                    DELETE-FIELD
+2 001                      COPY-SYSTEM-NUMBER             03599,L,a,(Brepol)
+2 001                      COPY-SYSTEM-NUMBER             035,L,a,(BE-TuBP)
+2 001                      REPLACE-STRING                 -,
+3 003                      DELETE-FIELD                 
+3 005                      DELETE-FIELD
+3 006                      DELETE-FIELD
+6 245##                    DELETE-SUBFIELD                h  
+6 245##                    CHANGE-SECOND-IND-MATCH        #,B,$$b
+6 245#B                    CHANGE-SECOND-IND-MATCH        #,C,$$c
+6 245#0                    CHANGE-SECOND-IND-MATCH        #,D,$$c
+6 245#0                    ADD-SUBFIELD                   h,[electronic resource].
+6 245#B                    REPLACE-STRING                 $$b,$$h[electronic resource] : $$b
+6 245#C                    REPLACE-STRING                 $$b,$$h[electronic resource] : $$b
+6 245#D                    REPLACE-STRING                 $$c,$$h[electronic resource] / $$c
+6 245##                    CHANGE-SECOND-IND              #,0
+6 506##                    DELETE-FIELD
+9 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+9                          SORT-FIELDS

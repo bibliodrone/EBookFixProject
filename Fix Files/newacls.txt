@@ -1,0 +1,48 @@
+1 LDR        007 007       FIXED-CHANGE-VAL               #,m
+2 003                      DELETE-FIELD                 
+4 035##                    CHANGE-FIRST-IND               #,9
+4 035##                    CHANGE-SECOND-IND              #,9
+4 035##                    REPLACE-STRING                 (dli),(Acls)
+4 035##                    REPLACE-STRING                 (DLI),(Acls)
+4 035##                    REPLACE-STRING                 (OCoLC),
+4 035##                    DELETE-FIELD-COND              Y,frontlist
+4 035##                    DELETE-FIELD-COND              Y,acls5a
+4 03599                    COPY-FIELD                     035
+4 010                      COPY-SYSTEM-NUMBER	          03588,L,a
+4 010                      DELETE-FIELD
+4 040                      ADD-SUBFIELD                   d,MH
+4 082##                    DELETE-FIELD
+4 090                      DELETE-SUBFIELD                b
+4 090                      CHANGE-FIELD                   059
+4 059##                    CHANGE-FIRST-IND               #,1
+4 059##                    CHANGE-SECOND-IND              #,4
+5 440##                    DELETE-FIELD-COND	          Y,History e-book
+5 533##                    REPLACE-STRING                 $$aElectronic text and image data,$$aElectronic reproduction
+5 533##                    DELETE-SUBFIELD                n
+5 533##                    REPLACE-STRING                 $$f([History e-book project]),$$f(History e-book project).
+6 773##                    DELETE-FIELD
+6 LDR                      ADD-FIELD                      02099,L,$$a
+6 02099                    CONCATENATE-FIELDS             776##,z
+6 02099                    CHANGE-FIRST-IND-MATCH         9,8,$$z
+6 02089                    REPLACE-STRING                 $$z,$$a
+6 02089                    REPLACE-STRING                 $$a$$a,$$a
+6 02099                    DELETE-FIELD
+6 02089                    CHANGE-FIRST-IND               8,
+6 020 9                    CHANGE-SECOND-IND              9,
+6 LDR                      ADD-FIELD                      01099,L,$$a
+6 01099                    CONCATENATE-FIELDS             776##,w
+6 01099                    CHANGE-FIRST-IND-MATCH         9,8,$$w
+6 01089                    REPLACE-STRING                 $$a$$w(DLC),$$a
+6 01099                    DELETE-FIELD
+6 01089                    CHANGE-FIRST-IND               8,
+6 010 9                    CHANGE-SECOND-IND              9,
+6 776##                    DELETE-FIELD
+6 830##                    DELETE-FIELD-COND	          Y,History e-book
+6 830##                    DELETE-FIELD-COND	          Y,ACLS Humanities
+6 730##                    DELETE-FIELD-COND	          Y,ACLS Humanities
+6 856##                    DELETE-SUBFIELD                z
+6 856##                    CHANGE-FIRST-IND               #,4
+6 856##                    CHANGE-SECOND-IND              #,1 
+6 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+6 9####                    DELETE-FIELD
+7                          SORT-FIELDS

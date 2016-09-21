@@ -1,0 +1,93 @@
+1 LDR        022 022       FIXED-CHANGE-VAL               ’,0
+2 035                      CHANGE-FIRST-IND-MATCH         #,0,OCoLC
+2 035                      DELETE-FIELD
+2 0350                     REPLACE-STRING                 (OCoLC),ocm
+2 0350#                    CHANGE-SECOND-IND-MATCH        #,7,$$aocm#
+2 0350#                    CHANGE-SECOND-IND-MATCH        #,6,$$aocm##
+2 0350#                    CHANGE-SECOND-IND-MATCH        #,5,$$aocm###
+2 0350#                    CHANGE-SECOND-IND-MATCH        #,4,$$aocm####
+2 0350#                    CHANGE-SECOND-IND-MATCH        #,3,$$aocm#####
+2 0350#                    CHANGE-SECOND-IND-MATCH        #,2,$$aocm######
+2 0350#                    CHANGE-SECOND-IND-MATCH        #,1,$$aocm#######
+2 0350#                    CHANGE-SECOND-IND-MATCH        #,0,$$aocm########
+2 0350#                    CHANGE-SECOND-IND-MATCH        #,N,$$aocm#########
+2 035##                    CHANGE-SECOND-IND-MATCH        #,C,$$aocm##########
+2 03507                    REPLACE-STRING                 $$aocm,$$aocm0000000
+2 03506                    REPLACE-STRING                 $$aocm,$$aocm000000
+2 03505                    REPLACE-STRING                 $$aocm,$$aocm00000
+2 03504                    REPLACE-STRING                 $$aocm,$$aocm0000
+2 03503                    REPLACE-STRING                 $$aocm,$$aocm000
+2 03502                    REPLACE-STRING                 $$aocm,$$aocm00
+2 03501                    REPLACE-STRING                 $$aocm,$$aocm0
+2 0350N                    REPLACE-STRING                 $$aocm,$$aocn
+2 035#C                    REPLACE-STRING                 $$aocm,$$aoc
+2 0350#                    CHANGE-SECOND-IND              #,
+2 0350                     COPY-FIELD                     001
+2 001                      REPLACE-STRING                 $$a,
+2 0350                     COPY-FIELD                     03599
+2 03599                    REPLACE-STRING                 $$a,$$a(FDLP)
+2 03599                    COPY-FIELD                     035
+2 0860                     COPY-FIELD                     05914
+2 05914              NOT-L DELETE-FIELD
+2 003##                    DELETE-FIELD
+2 005##                    DELETE-FIELD
+2 019##                    DELETE-FIELD
+2 029##                    DELETE-FIELD
+2 049##                    DELETE-FIELD
+2 092##                    DELETE-FIELD
+2 099##                    DELETE-FIELD
+7 LDR                      ADD-FIELD                      02299,L,$$a
+7 02299                    CONCATENATE-FIELDS             776##,x
+7 02299                    REPLACE-STRING                 $$x,
+7 LDR                      ADD-FIELD                      02099,L,$$a
+7 02099                    CONCATENATE-FIELDS             776##,z
+7 02099                    REPLACE-STRING                 $$z,
+7 LDR                      ADD-FIELD                      01099,L,$$a
+7 01099                    CONCATENATE-FIELDS             776##,w
+7 01099                    REPLACE-STRING                 $$a$$w(DLC),$$a
+7 01099                    DELETE-SUBFIELD                w
+7 01099                    DELETE-SUBFIELD                x
+7 LDR                      ADD-FIELD                      035XX,L,$$a
+7 035XX                    CONCATENATE-FIELDS             776##,w
+7 035XX                    REPLACE-STRING                 $$w(OCoLC),$$9
+7 035XX                    DELETE-SUBFIELD                a
+7 035XX                    DELETE-SUBFIELD                w
+7 035XX                    DELETE-SUBFIELD                x
+7 035XX                    REPLACE-STRING                 $$9,$$aocm
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,7,$$aocm#
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,6,$$aocm##
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,5,$$aocm###
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,4,$$aocm####
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,3,$$aocm#####
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,2,$$aocm######
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,1,$$aocm#######
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,0,$$aocm########
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,N,$$aocm#########
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,C,$$aocm##########
+8 035X7                    REPLACE-STRING                 $$aocm,$$aocm0000000
+8 035X6                    REPLACE-STRING                 $$aocm,$$aocm000000
+8 035X5                    REPLACE-STRING                 $$aocm,$$aocm00000
+8 035X4                    REPLACE-STRING                 $$aocm,$$aocm0000
+8 035X3                    REPLACE-STRING                 $$aocm,$$aocm000
+8 035X2                    REPLACE-STRING                 $$aocm,$$aocm00
+8 035X1                    REPLACE-STRING                 $$aocm,$$aocm0
+8 035XN                    REPLACE-STRING                 $$aocm,$$aocn
+8 035XC                    REPLACE-STRING                 $$aocm,$$aoc
+9 500##                    DELETE-FIELD-COND              Y,CRDP Project record.
+9 856##                    CHANGE-SECOND-IND-MATCH        #,9,permanent.access.gpo.gov
+9 856#9                    CHANGE-FIELD                   999
+9 856##                    DELETE-FIELD-COND              N,//purl.
+9 999##                    CHANGE-FIELD                   856
+9 856#9                    CHANGE-SECOND-IND              9,0
+9 LDR                      ADD-FIELD                      561  ,L,$$knetdoc$$mFDLP Print to Electronic Switch Project.
+9 561 			   CONCATENATE-FIELDS             949  ,k
+9 561                      CHANGE-FIRST-IND-MATCH         #,9,$$knetlaw
+9 5619#                    REPLACE-STRING                 $$knetdoc,
+9 5619#                    REPLACE-STRING                 $$mFDLP Print to Electronic Switch Project.,
+9 5619#                    CHANGE-FIRST-IND               9,0
+9 561##                    ADD-SUBFIELD                   n,CRDP Project record
+9 9####                    DELETE-FIELD
+
+9 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+9 LDR                      ADD-FIELD                      PRF  ,L,$$aEBOOK
+9                          SORT-FIELDS

@@ -1,0 +1,19 @@
+1 LDR        017 017       FIXED-CHANGE-VAL               ^,3
+1 008        026 026       FIXED-CHANGE-VAL               #,^
+2 035##                    DELETE-FIELD
+2 001                      COPY-SYSTEM-NUMBER             03599,L,a,(Coumedpda)
+2 003##                    DELETE-FIELD
+2 006##                    DELETE-FIELD
+2 019##                    DELETE-FIELD
+2 588##                    DELETE-FIELD
+2 710##                    DELETE-FIELD-COND              Y,NetLibrary
+2 710##                    DELETE-FIELD-COND              Y,MyiLibrary
+2 655##                    DELETE-FIELD-COND              Y,Electronic books
+2 856##                    DELETE-SUBFIELD                z
+2 LDR                      ADD-FIELD                      02099,L,$$a
+2 02099                    CONCATENATE-FIELDS             776##,z
+2 02099                    REPLACE-STRING                 $$z,
+2 776##                    DELETE-FIELD
+2 9####                    DELETE-FIELD
+7 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+9                          SORT-FIELDS

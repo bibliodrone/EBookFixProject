@@ -1,0 +1,72 @@
+1 LDR        017 017       FIXED-CHANGE-VAL               #,3
+1 LDR        018 018       FIXED-CHANGE-VAL               #,a
+1 LDR        006 006       FIXED-CHANGE-VAL               #,a
+1 008        026 026       FIXED-CHANGE-VAL               #,^
+1 008        029 029       FIXED-CHANGE-VAL               #,|
+1 008        030 030       FIXED-CHANGE-VAL               #,0
+1 008        031 031       FIXED-CHANGE-VAL               #,|
+1 008        033 033       FIXED-CHANGE-VAL               #,0
+1 008        015 017       FIXED-CHANGE-VAL               ###,nju
+2 001                      COPY-SYSTEM-NUMBER             03599,L,a,(Sprgp)
+2 001##                    COPY-SYSTEM-NUMBER             035  ,L,a,(Springer)
+2 003##                    DELETE-FIELD
+2 005##                    DELETE-FIELD
+2 020##                    DELETE-FIELD
+2 001##                    COPY-SYSTEM-NUMBER             020  ,L,a,
+2 020##                    REPLACE-STRING                 -,
+2 FMT                      REPLACE-STRING                 CF,BK
+2 LDR                      ADD-FIELD                      040  ,L,$$aSpringer
+2 245##                    REPLACE-STRING                 $$h[electronic resource],
+2 LDR                      ADD-FIELD                      533  ,L,$$aElectronic reproduction.
+2 533                      ADD-SUBFIELD                   f,(Springer Protocols).
+2 300                      DELETE-FIELD
+2 440##                    CHANGE-FIELD                   830
+2 650#4                    DELETE-FIELD
+2 710##                    DELETE-FIELD-COND              Y,SpringerLink
+2 773##                    DELETE-FIELD
+2 776##                    COPY-FIELD                     02099
+2 02099                    DELETE-SUBFIELD                i
+2 02099                    CHANGE-SUBFIELD                z,a
+2 856##                    DELETE-SUBFIELD                z
+2 9####                    DELETE-FIELD
+7 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+7 LDR                      ADD-FIELD                      02299,L,$$a
+7 02299                    CONCATENATE-FIELDS             776##,x
+7 02299                    REPLACE-STRING                 $$x,
+7 LDR                      ADD-FIELD                      02099,L,$$a
+7 02099                    CONCATENATE-FIELDS             776##,z
+7 02099                    REPLACE-STRING                 $$z,
+7 LDR                      ADD-FIELD                      01099,L,$$a
+7 01099                    CONCATENATE-FIELDS             776##,w
+7 01099                    REPLACE-STRING                 $$a$$w(DLC),$$a
+7 01099                    DELETE-SUBFIELD                w
+7 01099                    DELETE-SUBFIELD                x
+7 LDR                      ADD-FIELD                      035XX,L,$$a
+7 035XX                    CONCATENATE-FIELDS             776##,w
+7 035XX                    REPLACE-STRING                 $$w(OCoLC),$$9
+7 035XX                    DELETE-SUBFIELD                a
+7 035XX                    DELETE-SUBFIELD                w
+7 035XX                    DELETE-SUBFIELD                x
+7 035XX                    REPLACE-STRING                 $$9,$$aocm
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,7,$$aocm#
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,6,$$aocm##
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,5,$$aocm###
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,4,$$aocm####
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,3,$$aocm#####
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,2,$$aocm######
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,1,$$aocm#######
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,0,$$aocm########
+7 035X#                    CHANGE-SECOND-IND-MATCH        #,N,$$aocm#########
+7 035##                    CHANGE-SECOND-IND-MATCH        #,C,$$aocm##########
+8 035X7                    REPLACE-STRING                 $$aocm,$$aocm0000000
+8 035X6                    REPLACE-STRING                 $$aocm,$$aocm000000
+8 035X5                    REPLACE-STRING                 $$aocm,$$aocm00000
+8 035X6                    REPLACE-STRING                 $$aocm,$$aocm000000
+8 035X5                    REPLACE-STRING                 $$aocm,$$aocm00000
+8 035X4                    REPLACE-STRING                 $$aocm,$$aocm0000
+8 035X3                    REPLACE-STRING                 $$aocm,$$aocm000
+8 035X2                    REPLACE-STRING                 $$aocm,$$aocm00
+8 035X1                    REPLACE-STRING                 $$aocm,$$aocm0
+8 035XN                    REPLACE-STRING                 $$aocm,$$aocn
+8 035#C                    REPLACE-STRING                 $$aocm,$$aoc
+9                          SORT-FIELDS

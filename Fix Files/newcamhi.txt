@@ -1,0 +1,19 @@
+1 LDR        017 017       FIXED-CHANGE-VAL               #,2
+1 LDR        022 022       FIXED-CHANGE-VAL               #,0
+2 001##                    COPY-SYSTEM-NUMBER             03599,L,a,(Camhi)
+2 003##                    DELETE-FIELD
+2 005##                    DELETE-FIELD
+2 006##                    DELETE-FIELD
+2 007##                    DELETE-FIELD
+2 LDR                      ADD-FIELD                      007  ,L,cr^un|||||||||
+2 019##                    DELETE-FIELD
+2 049##                    DELETE-FIELD
+2 092##                    DELETE-FIELD
+2 256##                    DELETE-FIELD
+2 270##                    DELETE-FIELD
+2 506##                    DELETE-FIELD
+2 655##                    DELETE-FIELD-COND              Y,Computer network resources
+2 856##                    DELETE-SUBFIELD                z
+2 9####                    DELETE-FIELD
+7 LDR                      ADD-FIELD                      STA1 ,L,$$aEBOOK
+9                          SORT-FIELDS

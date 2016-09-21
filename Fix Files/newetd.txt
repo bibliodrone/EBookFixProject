@@ -1,0 +1,33 @@
+1 008        024 024       FIXED-CHANGE-VAL               |,m
+1 099                      CHANGE-FIRST-IND               #,0
+1 0990                     CHANGE-SECOND-IND-MATCH        #,1,$$bNET
+1 0990                     CHANGE-SECOND-IND-MATCH        #,2,$$bHUA
+1 0990                     CHANGE-SECOND-IND-MATCH        #,3,$$bMED
+1 0990                     CHANGE-SECOND-IND-MATCH        #,4,$$bBAK
+1 LDR                      ADD-FIELD                      035  ,L,$$a(DASH)
+1 09901                    ADD-FIELD                      03599,L,$$a(ETDnetgen)
+1 09902                    ADD-FIELD                      03599,L,$$a(ETDhuahd)
+1 09903                    ADD-FIELD                      03599,L,$$a(ETDmedrareb)
+1 09904                    ADD-FIELD                      03599,L,$$a(ETDbakarc)
+1 035                      CONCATENATE-FIELDS             09901,u
+1 035                      REPLACE-STRING                 $$uhttp://nrs.harvard.edu/urn-3:HUL.InstRepos:,
+1 035                      COPY-FIELD                     TMP  ,L
+1 TMP                      ADD-SUBFIELD                   9,temp
+1 TMP                      CHANGE-FIRST-IND-MATCH         #,X,$$a(DASH)$$9temp
+1 TMP                      COPY-FIELD                     001  ,L    
+1 001                      REPLACE-STRING                 $$a(DASH),
+1 001                      REPLACE-STRING                 $$9temp,
+1 TMP##                    DELETE-FIELD
+2 520##                    REPLACE-STRING                 $$9^^,
+2 500##                    CHANGE-SECOND-IND-MATCH        #,9,Keywords: .
+2 500#9                    DELETE-FIELD
+3 337##                    DELETE-FIELD
+3 338##                    DELETE-FIELD
+3 09901                    ADD-FIELD                      337E ,L,$$acomputer$$bc$$2rdamedia
+3 09901                    ADD-FIELD                      338E ,L,$$aonline resource$$bcr$$2rdacarrier
+3 09901                    CHANGE-FIRST-IND-MATCH         #,9,$$bNET
+3 0990#                    ADD-FIELD                      337P ,L,$$aunmediated$$bn$$2rdamedia
+3 0990#                    ADD-FIELD                      338P ,L,$$avolume$$bnc$$2rdacarrier
+3 09991                    CHANGE-FIRST-IND               #,0
+3 LDR                      ADD-FIELD                      007  ,L,cr^|n|||||||||
+9                          SORT-FIELDS
